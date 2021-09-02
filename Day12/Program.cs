@@ -21,10 +21,11 @@ namespace Day12
                    kkas[i] = "*****";
                 }
 
-            Console.WriteLine(kkas[i]);
-
             }
-
+            for(int i = 0; i <kkas.Length; i++)
+            {
+                Console.WriteLine(kkas[i]);
+            }
 
 
         }

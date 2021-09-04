@@ -4,7 +4,7 @@ namespace Day13_Saraksti_
 {
     class Program
     {
-        static void Main(string[] args)
+        static void MainOld(string[] args)
         {
             Random random = new Random();
 

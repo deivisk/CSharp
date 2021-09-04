@@ -21,6 +21,7 @@ namespace Day13_Saraksti_
                 second[i] = first[i];
 
             }
+            Console.WriteLine("Ievadiet skaitli");
 
             second[5] = Convert.ToInt32(Console.ReadLine());
 

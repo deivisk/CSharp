@@ -20,7 +20,6 @@ namespace Day13_Saraksti_
 
                 StudentCount.Add(Console.ReadLine());
 
-
             }
 
             for(int i = 0; i < count; i++)

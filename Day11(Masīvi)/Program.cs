@@ -15,10 +15,14 @@ namespace Day11_Masīvi_
             int[] ievade = new int[10];
 
             int galaskaitlis = 0;
+            
+            int randomnumber = 0;
+
+            int galaskaitlisAI = 0;
 
             if (izvele == "pats")
             {
-                for(int i = 0; i < 10; i++)
+                for(int i = 0; i < ievade.Length; i++)
                 {
                     Console.WriteLine("Ievadiet skaitli");
 
@@ -26,17 +30,27 @@ namespace Day11_Masīvi_
 
                     ievade[i] = vards;
 
+                    galaskaitlis = galaskaitlis + ievade[i];
+
                 }
             }
             else if(izvele == "dators")
             {
-                int randomnumber = random.Next(10, 100);
+                randomnumber = random.Next(10, 100);
+
+                galaskaitlisAI = galaskaitlisAI + randomnumber;
+
             }
             
 
-            for(int i = 0; i < 10; i++)
+            for(int i = 0; i < 1; i++)
             {
-                Console.WriteLine(galaskaitlis);
+                if(izvele.Contains("dators") == true)
+                {
+                    Console.WriteLine("Datora gala summa ir - " + galaskaitlisAI);
+                }
+                else
+                Console.WriteLine("Jūsu gala summa - " + galaskaitlis);
             }
         }
     }

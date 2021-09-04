@@ -16,7 +16,7 @@ namespace Day13_Saraksti_
 
             for (int i = 0; i < count; i++)
             {
-                Console.WriteLine("Ievadi studentu vardus");
+                Console.WriteLine("Ievadi studentu vārdus");
 
                 StudentCount.Add(Console.ReadLine());
             }

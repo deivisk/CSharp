@@ -25,6 +25,8 @@ namespace Day13_Saraksti_
 
             second[5] = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine(" ");
+
             for(int i = 0; i < second.Length; i++)
             {
                 Console.WriteLine(second[i]);

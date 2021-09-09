@@ -14,6 +14,8 @@ namespace Day14
         }
         public static void ShowList()
         {
+
+            Console.WriteLine("asd");
             for(int i = 0; i < saraksts.Count; i++)
             {
                 Console.WriteLine(saraksts[i]);

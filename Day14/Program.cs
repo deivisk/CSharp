@@ -6,7 +6,38 @@ namespace Day14
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string izvele = "";
+
+            while(izvele != "0")
+            {
+                Console.WriteLine("1 - Pievienot studentu sarakstam");
+                Console.WriteLine("2 - Izsaukt studentu sarakstu");
+                Console.WriteLine("0 - iziet");
+
+            
+
+                izvele = Console.ReadLine();
+
+                if(izvele == "0")
+                {
+                    break;
+                }
+
+
+                if(izvele == "1")
+                {
+                    Console.WriteLine("Ievadiet stundeta vārdu, uzvārdu");
+
+                    String a = Console.ReadLine();
+
+                    StudentList.AddList(a);
+
+                }
+
+
+            }
+
+
         }
     }
 }

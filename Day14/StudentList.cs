@@ -11,12 +11,14 @@ namespace Day14
         {
             saraksts.Add(a);
 
-            Console.WriteLine(saraksts);
-
         }
         public static void ShowList()
         {
-            Console.WriteLine(saraksts);
+            for(int i = 0; i < saraksts.Count; i++)
+            {
+                Console.WriteLine(saraksts[i]);
+            }
+
         }
     }
 }

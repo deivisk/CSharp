@@ -20,20 +20,24 @@ namespace Day14
 
                 if(izvele == "0")
                 {
+                    Console.WriteLine("Adios amigos");
                     break;
                 }
 
 
                 if(izvele == "1")
                 {
-                    Console.WriteLine("Ievadiet stundeta vārdu, uzvārdu");
+                    Console.WriteLine("Ievadiet studenta vārdu, uzvārdu");
 
                     String a = Console.ReadLine();
 
                     StudentList.AddList(a);
 
                 }
-
+                if(izvele == "2")
+                {
+                    StudentList.ShowList();
+                }
 
             }
 

@@ -51,7 +51,7 @@ namespace Day15
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(saraksts[i]);
                 }
             }
 
@@ -59,7 +59,7 @@ namespace Day15
             {
                 for (int i = 10; i >= 0; i--)
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(saraksts[i]);
                 }
             }
 

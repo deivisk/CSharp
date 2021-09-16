@@ -16,13 +16,13 @@ namespace Day15
 
             int input = Convert.ToInt32(Console.ReadLine());
 
-            for(int i = 0; i < 30; i++)
+            for (int i = 0; i < 30; i++)
             {
                 randomnumber = random.Next(0, 11);
 
                 saraksts.Add(randomnumber);
             }
-            if(input)
+            if()
             {
                 for(int i = 0; i < saraksts.Count; i++)
                 {

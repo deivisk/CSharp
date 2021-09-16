@@ -38,7 +38,6 @@ namespace Day15
 
             for(int i = 0; i < 10; i++)
             {
-
                 Console.WriteLine("Ievadi skaitli");
 
                 ievade = Convert.ToInt32(Console.ReadLine());
@@ -48,17 +47,17 @@ namespace Day15
                 sum = ievade + sum;
             }
 
-            for (int i = 0; i < 10; i++)
+            if (sum < 15)
             {
-                if (sum < 15)
+                for (int i = 0; i < 10; i++)
                 {
-                    Console.WriteLine(saraksts[i]);
+                        Console.WriteLine(saraksts[i]);
                 }
             }
 
-            for (int i = 10; i >= 0; i--)
+            if (sum > 15)
             {
-                if (sum > 15)
+                for (int i = 10; i >= 0; i--)
                 {
                     Console.WriteLine(saraksts[i]);
                 }

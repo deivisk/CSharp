@@ -34,20 +34,17 @@ namespace Day16
             }
             Console.WriteLine("");
 
-            for(int i = 0; i < 10; i++)
+            for(int i = 0; i < UserList.Count; i++)
             {
-                if(UserList[0] == AIList[i])
+                for(int e = 0; e < AIList.Count; e++)
                 {
-                    Console.WriteLine("Jūsu 1. skaitlis ir " + i);
+                    if(AIList[e] == UserList[i])
+                    {
+                        
+                    }
+
                 }
-                if(UserList[1] == AIList[i])
-                {
-                    Console.WriteLine("Jūsu 2. skaitlis ir " + i);
-                }
-                if (UserList[2] == AIList[i])
-                {
-                    Console.WriteLine("Jūsu 3. skaitlis ir " + i);
-                }
+
             }
         }
     }

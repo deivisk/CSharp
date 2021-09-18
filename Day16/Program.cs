@@ -7,6 +7,11 @@ namespace Day16
     {
         static void Main(string[] args)
         {
+
+
+        }
+        static void next1()
+        {
             /*            List<int> UserList = new List<int>();
 
                         List<int> AIList = new List<int>();
@@ -45,6 +50,11 @@ namespace Day16
                             }
                         }*/
 
+
+        }
+
+        static void next2()
+        {
             List<string> names = new List<string>();
 
             List<int> years = new List<int>();
@@ -60,8 +70,10 @@ namespace Day16
             for(int i = 0; i < 5; i++)
             {
                 Console.WriteLine("Studenta vārds " + names[i] + " dzimis " + years[i]);
-            }
+        }
+        static void next3()
+        {
 
-        } 
+        }
     }
 }

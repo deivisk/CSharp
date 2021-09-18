@@ -51,10 +51,10 @@ namespace Day16
 
             for(int i =0; i < 5; i++)
             {
-                Console.WriteLine("Ievadiet studneta vārdu, uzvārdu");
+                Console.WriteLine("Ievadiet studenta vārdu, uzvārdu");
                 names.Add(Console.ReadLine());
 
-                Console.WriteLine("Ievadiet stundetu dzimšanas gadus");
+                Console.WriteLine("Ievadiet studenta dzimšanas gadu");
                 years.Add(Convert.ToInt32(Console.ReadLine()));
             }
             for(int i = 0; i < 5; i++)

@@ -7,18 +7,6 @@ namespace Day16
     {
         static void Main(string[] args)
         {
-
-
-            Console.WriteLine("");
-
-            if()
-            {
-
-            }
-
-        }
-        private static int User()
-        {
             List<int> UserList = new List<int>();
 
             int input = 0;
@@ -31,10 +19,6 @@ namespace Day16
 
                 UserList.Add(input);
             }
-        }
-
-        private static int RANAI()
-        {
             List<int> AIList = new List<int>();
 
             Random random = new Random();
@@ -47,7 +31,13 @@ namespace Day16
 
                 AIList.Add(randomnumber);
             }
-            
+            Console.WriteLine("");
+
+            if()
+            {
+
+            }
+
         }
     }
 }

@@ -46,7 +46,7 @@ namespace Day16
                 }
                 if (UserList[2] == AIList[i])
                 {
-                    Console.WriteLine("Jūsu 2. skaitlis ir " + i);
+                    Console.WriteLine("Jūsu 3. skaitlis ir " + i);
                 }
             }
         }

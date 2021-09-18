@@ -9,6 +9,12 @@ namespace Day16
         {
             List<int> UserList = new List<int>();
 
+            List<int> AIList = new List<int>();
+
+            Random random = new Random();
+
+            int randomnumber = 0;
+
             int input = 0;
 
             for (int i = 0; i < 3; i++)
@@ -19,11 +25,6 @@ namespace Day16
 
                 UserList.Add(input);
             }
-            List<int> AIList = new List<int>();
-
-            Random random = new Random();
-
-            int randomnumber = 0;
 
             for(int i = 0; i < 10; i++)
             {
@@ -33,11 +34,13 @@ namespace Day16
             }
             Console.WriteLine("");
 
-            if()
+            for(int i = 0; i < 10; i++)
             {
-
+                if(UserList[0] == AIList[i])
+                {
+                    Console.WriteLine("Jūsu skaitlis ir " + i);
+                }
             }
-
         }
     }
 }

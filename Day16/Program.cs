@@ -42,9 +42,7 @@ namespace Day16
                     {
                         
                     }
-
                 }
-
             }
         }
     }

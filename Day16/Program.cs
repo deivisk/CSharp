@@ -38,7 +38,15 @@ namespace Day16
             {
                 if(UserList[0] == AIList[i])
                 {
-                    Console.WriteLine("Jūsu skaitlis ir " + i);
+                    Console.WriteLine("Jūsu 1. skaitlis ir " + i);
+                }
+                if(UserList[1] == AIList[i])
+                {
+                    Console.WriteLine("Jūsu 2. skaitlis ir " + i);
+                }
+                if (UserList[2] == AIList[i])
+                {
+                    Console.WriteLine("Jūsu 2. skaitlis ir " + i);
                 }
             }
         }

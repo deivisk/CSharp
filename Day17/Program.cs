@@ -34,6 +34,8 @@ namespace Day17
                 Console.WriteLine(first[i]);
             }
 
+            Console.WriteLine();
+
             Console.WriteLine("1. Izvadīt simbolu skaitu lista elementā");
             Console.WriteLine("2. Izvadīt vidējo garumu no visiem elementiem");
             Console.WriteLine("3. Izvadīt visu elementu garumu summu");
@@ -42,6 +44,14 @@ namespace Day17
 
             if(choice == 1)
             {
+                
+            }
+            if (choice == 2)
+            {
+                glass();
+            }
+            if (choice == 3)
+            {
 
             }
 
@@ -49,7 +59,12 @@ namespace Day17
 
         static void glass()
         {
-
+            for(int i = 0; i < first.Count; i++)
+            {
+                string kk = first.Count / first[i];
+                
+                Console.WriteLine(kk);
+            }
         }
     }
 }

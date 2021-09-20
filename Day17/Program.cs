@@ -11,11 +11,11 @@ namespace Day17
             Console.WriteLine("Izvēlaties, cik elementus ievadīt");
 
             int count = Convert.ToInt32(Console.ReadLine());
+            
 
             if(count < 1)
             {
                 count = 5;
-
             }
 
             for(int i = 0; i < count; i++)
@@ -24,8 +24,32 @@ namespace Day17
 
                 String ievade = Console.ReadLine();
 
+                first.Add(ievade);
+            }
+
+            Console.WriteLine();
+
+            for(int i = 0; i < first.Count; i++)
+            {
+                Console.WriteLine(first[i]);
+            }
+
+            Console.WriteLine("1. Izvadīt simbolu skaitu lista elementā");
+            Console.WriteLine("2. Izvadīt vidējo garumu no visiem elementiem");
+            Console.WriteLine("3. Izvadīt visu elementu garumu summu");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+
+            if(choice == 1)
+            {
 
             }
+
+        }
+
+        static void glass()
+        {
+
         }
     }
 }

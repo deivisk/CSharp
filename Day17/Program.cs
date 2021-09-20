@@ -66,5 +66,10 @@ namespace Day17
                 Console.WriteLine(kk);
             }
         }
+
+        static void glass2()
+        {
+
+        }
     }
 }

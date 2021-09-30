@@ -32,10 +32,9 @@ namespace GUI2
                 randomnumber = random.Next(1, 10);
 
                 Numbers.Add(randomnumber);
+
+                a = Numbers[i];
             }
-
-            textBox1.Text = Numbers();
-
         }
 
         private void button2_Click(object sender, EventArgs e)

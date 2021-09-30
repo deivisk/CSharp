@@ -33,13 +33,12 @@ namespace GUI2
 
                 Numbers.Add(randomnumber);
 
-                label1.Text = Convert.ToString(Numbers[i]);
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            label1.Text = Convert.ToString(Numbers[Convert.ToInt32(textBox1.Text)]);
         }
     }
 }

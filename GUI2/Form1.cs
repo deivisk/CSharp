@@ -33,7 +33,7 @@ namespace GUI2
 
                 Numbers.Add(randomnumber);
 
-                a = Numbers[i];
+                label1.Text = Convert.ToString(Numbers[i]);
             }
         }
 

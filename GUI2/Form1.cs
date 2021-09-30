@@ -38,7 +38,7 @@ namespace GUI2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            label1.Text = Convert.ToString(Numbers[Convert.ToInt32(textBox1.Text)]);
+            label1.Text = Convert.ToString(Numbers[Convert.ToInt32(textBox2.Text)]);
         }
     }
 }

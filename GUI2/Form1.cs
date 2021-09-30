@@ -19,13 +19,10 @@ namespace GUI2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int a = 1;
 
             int b = Convert.ToInt32(label1.Text);
-
-            int c = b + a;
-
-            label1.Text = Convert.ToString(c);
+            
+            label1.Text = Convert.ToString(b + 1);
         }
     }
 }

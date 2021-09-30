@@ -21,8 +21,13 @@ namespace GUI2
         {
 
             int b = Convert.ToInt32(label1.Text);
-            
+                if(b == 10)
+                {
+                    b = 0;
+                }            
             label1.Text = Convert.ToString(b + 1);
+
+
         }
     }
 }

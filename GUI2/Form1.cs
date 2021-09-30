@@ -26,6 +26,7 @@ namespace GUI2
             {
                 b = 0;
             }            
+
             label1.Text = Convert.ToString(b + 1);
 
 

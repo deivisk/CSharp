@@ -29,12 +29,13 @@ namespace GUI2
 
             for(int i = 0; i < a; i++)
             {
-
                 randomnumber = random.Next(1, 10);
 
-                Numbers.Add(Convert.ToInt32(textBox1.Text));
+                Numbers.Add(randomnumber);
             }
-            
+
+            textBox1.Text = Numbers();
+
         }
 
         private void button2_Click(object sender, EventArgs e)

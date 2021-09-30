@@ -16,20 +16,29 @@ namespace GUI2
         {
             InitializeComponent();
         }
+            List<int> Numbers = new List<int>();
+
+            Random random = new Random();
 
         private void button1_Click(object sender, EventArgs e)
         {
 
-            int b = Convert.ToInt32(label1.Text);
+            int a = Convert.ToInt32(textBox1.Text);
 
-            if(b == 10)
+            int randomnumber = 0;
+
+            for(int i = 0; i < a; i++)
             {
-                b = 0;
-            }            
 
-            label1.Text = Convert.ToString(b + 1);
+                randomnumber = random.Next(1, 10);
 
+                Numbers.Add(Convert.ToInt32(textBox1.Text));
+            }
+            
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
     }

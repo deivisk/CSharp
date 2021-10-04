@@ -33,17 +33,12 @@ namespace GUI3
             {
                 first.Add(text1.Text);
             }
-            for(int i = 0; i < first.Count; i++)
-            {
-                label1.Text = Convert.ToString(first[i]);
-            }
-
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < 3; i++)
+            if (second.Count == 3)
             {
                 second.Add(text2.Text);
             }
@@ -52,7 +47,7 @@ namespace GUI3
 
         private void button5_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < 3; i++)
+            if (third.Count == 3)
             {
                 third.Add(text3.Text);
             }
@@ -72,16 +67,24 @@ namespace GUI3
 
         private void button4_Click(object sender, EventArgs e)
         {
-            second.IndexOf(text1.Text);
-
-            second.Remove(text1.Text);
+            for (int i = 0; i < second.Count; i++)
+            {
+                if (second[i].Equals(text2.Text))
+                {
+                    second.RemoveAt(i);
+                }
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            third.IndexOf(text1.Text);
-
-            third.Remove(text1.Text);
+            for (int i = 0; i < third.Count; i++)
+            {
+                if (third[i].Equals(text1.Text))
+                {
+                    third.RemoveAt(i);
+                }
+            }
         }
     }
 }

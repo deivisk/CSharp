@@ -24,21 +24,23 @@ namespace GUI2
         {
 
             int a = Convert.ToInt32(textBox1.Text);
+            
 
-            int randomnumber = 0;
 
-            for(int i = 0; i < a; i++)
-            {
-                randomnumber = random.Next(1, 10);
+            int number = Convert.ToInt32(textBox1.Text);
 
-                Numbers.Add(randomnumber);
+            Numbers.Add(number);
 
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             label1.Text = Convert.ToString(Numbers[Convert.ToInt32(textBox2.Text)]);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label1.Text = Numbers
         }
     }
 }

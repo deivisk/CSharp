@@ -29,13 +29,10 @@ namespace GUI3
         private void button1_Click(object sender, EventArgs e)
         {
 
-
-                first.Add(text1.Text);
-            for(int i = 0; i < first.Count; i++)
+            if(first.Count == 3)
             {
-                label1.Text = first[i];
+                first.Add(text1.Text);
             }
-
         }
 
         private void button3_Click(object sender, EventArgs e)

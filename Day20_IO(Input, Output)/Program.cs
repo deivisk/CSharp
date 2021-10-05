@@ -17,21 +17,11 @@ namespace Day20_IO_Input__Output_
 
                 for(int i = 0; i < 3; i++)
                 {
-                Console.WriteLine("Ievadi pirmo teksu!");
-                string pirmais = Console.ReadLine();
+                    Console.WriteLine("Ievadi teksu!");
+                    string ievade = Console.ReadLine();
+                    writer.WriteLine(ievade);
                 }
 
-
-
-                Console.WriteLine("Ievadi otro teksu!");
-                string otrais = Console.ReadLine();
-
-                Console.WriteLine("Ievadi trešo teksu!");
-                string trešais = Console.ReadLine();
-
-                writer.WriteLine(pirmais);
-                writer.WriteLine(otrais);
-                writer.WriteLine(trešais);
                 writer.Close();
             }
             catch

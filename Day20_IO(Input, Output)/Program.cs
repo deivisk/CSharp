@@ -15,8 +15,13 @@ namespace Day20_IO_Input__Output_
             {
                 StreamWriter writer = new StreamWriter(fileName);
 
+                for(int i = 0; i < 3; i++)
+                {
                 Console.WriteLine("Ievadi pirmo teksu!");
                 string pirmais = Console.ReadLine();
+                }
+
+
 
                 Console.WriteLine("Ievadi otro teksu!");
                 string otrais = Console.ReadLine();

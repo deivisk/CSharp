@@ -51,10 +51,13 @@ namespace Day21
             StreamReader reader = new StreamReader(fileName);
 
 
-            string a = reader.ReadLine();
+
 
             try
             {
+
+                string a = reader.ReadLine();
+
                 while(a != null)
                 {
                     Liste.Add(a);

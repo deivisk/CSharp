@@ -7,7 +7,7 @@ namespace Day21
 {
     class ListSamples
     {
-        static String folderPath = @"C:\Users\deivi\Desktop";
+        static String folderPath = @"C:\das\";
 
         static List<String> Liste = new List<String>();
         
@@ -50,9 +50,6 @@ namespace Day21
 
             StreamReader reader = new StreamReader(fileName);
 
-
-
-
             try
             {
 
@@ -70,8 +67,14 @@ namespace Day21
                 Console.WriteLine("kkas nesanak");
             }
 
+            int sum = 0;
 
+            for(int i = 0; i < Liste.Count; i++)
+            {
+                sum += i;
+            }
 
+            Console.WriteLine("Kopējā summa = " + sum);
         }
     }
 }

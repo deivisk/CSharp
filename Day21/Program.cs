@@ -7,6 +7,7 @@ namespace Day21
         static void Main(string[] args)
         {
             ListSamples.Sample1();
+            ListSamples.read();
         }
     }
 }

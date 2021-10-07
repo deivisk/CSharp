@@ -7,12 +7,14 @@ namespace Day21
 {
     class ListSamples
     {
-        static String folderPath = @"C:\Users\deivi\Desktop\C# kursi";
+        static String folderPath = @"C:\Users\deivi\Desktop";
+
+        static List<String> Liste = new List<String>();
         
         
         public static void Sample1()
         {
-            List<String> Liste = new List<String>();
+
 
             Random random = new Random();
 
@@ -36,6 +38,38 @@ namespace Day21
             {
                 Console.WriteLine("Fails neeksistē");
             }
+
+
+
+
+        }
+        public static void read()
+        {
+
+            String fileName = folderPath + "piemeri.txt";
+
+            StreamReader reader = new StreamReader(fileName);
+
+
+
+            string wtf = reader.ReadLine();
+
+            try
+            {
+                while(wtf != null)
+                {
+                    Liste.Add(wtf);
+
+                    wtf = reader.ReadLine();
+                }
+            }
+            catch
+            {
+                Console.WriteLine("kkas nesanak");
+            }
+
+
+
         }
     }
 }

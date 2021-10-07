@@ -51,8 +51,7 @@ namespace Day21
             StreamReader reader = new StreamReader(fileName);
 
 
-
-            string wtf = reader.ReadLine();
+            string a = reader.ReadLine();
 
             try
             {
@@ -60,7 +59,7 @@ namespace Day21
                 {
                     Liste.Add(wtf);
 
-                    wtf = reader.ReadLine();
+                    a = reader.ReadLine();
                 }
             }
             catch

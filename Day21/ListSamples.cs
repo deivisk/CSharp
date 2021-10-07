@@ -16,8 +16,6 @@ namespace Day21
 
             Random random = new Random();
 
-
-
             String fileName = folderPath + "piemeri.txt";
 
             try

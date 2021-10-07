@@ -7,7 +7,7 @@ namespace Day21
 {
     class ListSamples
     {
-        static String folderPath = @"C:\temp\";
+        static String folderPath = @"C:\Users\deivi\Desktop\C# kursi";
         
         
         public static void Sample1()

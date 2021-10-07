@@ -55,9 +55,9 @@ namespace Day21
 
             try
             {
-                while(wtf != null)
+                while(a != null)
                 {
-                    Liste.Add(wtf);
+                    Liste.Add(a);
 
                     a = reader.ReadLine();
                 }

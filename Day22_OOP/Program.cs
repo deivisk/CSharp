@@ -9,10 +9,15 @@ namespace Day22_OOP
             Random random = new Random();
 
             double randomnum = random.Next(0, 11);
+            double randomnumb = random.Next(0, 11);
 
-            kautkas first = new kautkas();
+            Candidate first = new Candidate("Pults ", "Grāmata", 2007, randomnum);
+            first.izvade();
 
-            kautkas second = new kautkas();
+            Console.WriteLine();
+
+            Candidate second = new Candidate("Spilvens ", "Krēsls", 2003, randomnumb);
+            second.izvade();
         }
     }
 }

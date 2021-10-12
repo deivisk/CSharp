@@ -11,18 +11,18 @@ namespace Day22_OOP
         public Double HRmark;
         public Double TVmark;
 
-        public kautkas(String name, String LastName, Double HRmark, Double TVmark)
+        public Candidate(String name, String LastName, Double HRmark, Double TVmark)
         {
             this.name = name;
             this.LastName = LastName;
             this.HRmark = HRmark;
             this.TVmark = TVmark;
         }
-        public static void izvade()
+        public void izvade()
         {
-            Console.WriteLine("vārds, uzvārds " + name + LastName);
+            Console.WriteLine("Vārds, uzvārds " + name + LastName);
             Console.WriteLine("Dotā atzīme no HR - " + HRmark);
-            Console.WriteLine("Dotā atzīme no tehniskā vadītāja - " TVmark);
+            Console.WriteLine("Dotā atzīme no tehniskā vadītāja - " + TVmark);
         }
     }
 }

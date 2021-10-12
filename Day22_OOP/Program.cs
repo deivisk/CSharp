@@ -11,12 +11,14 @@ namespace Day22_OOP
             Double randomnum = random.Next(0, 11);
             Double randomnumb = random.Next(0, 11);
 
-            Candidate first = new Candidate("Pēteris ", "Gulbis", 2007, randomnum);
+            double avarage = (randomnum + randomnumb)/2
+
+            Candidate first = new Candidate("Pēteris ", "Gulbis", randomnumb, randomnum, avarage);
             first.izvade();
 
             Console.WriteLine();
 
-            Candidate second = new Candidate("Solvita ", "Āboltiņa", 2003, randomnumb);
+            Candidate second = new Candidate("Solvita ", "Āboltiņa", randomnumb, randomnumb, avarage);
             second.izvade();
         }
     }

@@ -18,31 +18,29 @@ namespace Day22_OOP
             Console.WriteLine("Cik studentus ievadīt?");
             int daudzums = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Studenta vārds");
-            string nn = Console.ReadLine();
+            String name = "";
 
-            Console.WriteLine("Studenta uzvārds");
-            string nna = Console.ReadLine();
+            String LastName = "";
 
-
-
-            Candidate first = new Candidate("Pēteris ", "Gulbis", randomnumb, randomnum, avarage);
-            first.izvade();
-
-            Console.WriteLine();
-
-            Candidate second = new Candidate("Solvita ", "Āboltiņa", randomnumb, randomnum, avarage);
-            second.izvade();
-
-            Console.WriteLine();
-
-            Candidate inf = new Candidate(nn, nna, randomnumb, randomnum, avarage);
-            inf.izvade();
 
             for(int i = 0; i < daudzums; i++)
             {
+
+
+                Console.WriteLine("Studenta vārds");
+                name = Console.ReadLine();
+
+                Console.WriteLine("Studenta uzvārds");
+                LastName = Console.ReadLine();
+
+                Candidate inf = new Candidate(name, LastName, randomnumb, randomnum, avarage);
                 Liste.Add(inf);
+                inf.izvade();
             }
+
+
+
+
         }
     }
 }

@@ -11,8 +11,6 @@ namespace Day22_OOP
             Double randomnum = random.Next(0, 11);
             Double randomnumb = random.Next(0, 11);
 
-
-
             Candidate first = new Candidate("Pēteris ", "Gulbis", 2007, randomnum);
             first.izvade();
 

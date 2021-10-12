@@ -34,8 +34,6 @@ namespace Day22_OOP
                 TVmark = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine();
 
-                ave(HRmark, TVmark);
-
                 Candidate inf = new Candidate(name, LastName, HRmark, TVmark, ave(HRmark, TVmark));
                 Liste.Add(inf);
             }

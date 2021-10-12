@@ -22,6 +22,8 @@ namespace Day22_OOP
 
             for(int i = 0; i < daudzums; i++)
             {
+                Console.WriteLine("Tagad Tu ievadi informāciju par " + i + ". studentu");
+                Console.WriteLine();
                 Console.WriteLine("Studenta vārds");
                 name = Console.ReadLine();
                 Console.WriteLine("Studenta uzvārds");

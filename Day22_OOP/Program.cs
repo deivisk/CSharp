@@ -29,6 +29,10 @@ namespace Day22_OOP
                 Console.WriteLine("Studenta uzvārds");
                 LastName = Console.ReadLine();
 
+            }
+
+            for(int i = 0; i < daudzums; i++)
+            {
                 Candidate inf = new Candidate(name, LastName, randomnumb, randomnum, avarage);
                 Liste.Add(inf);
                 inf.izvade();

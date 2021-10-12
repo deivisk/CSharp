@@ -27,6 +27,7 @@ namespace Day22_OOP
             Console.WriteLine("Dotā atzīme no HR - " + HRmark);
             Console.WriteLine("Dotā atzīme no tehniskā vadītāja - " + TVmark);
             Console.WriteLine("Vidējā atzīme - " + average);
+            Console.WriteLine();
         }
     }
 }

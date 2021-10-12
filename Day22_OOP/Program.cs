@@ -32,6 +32,7 @@ namespace Day22_OOP
                 HRmark = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ievadi vadītāja doto atzīmi");
                 TVmark = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine();
 
                 ave(HRmark, TVmark);
 

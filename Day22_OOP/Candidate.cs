@@ -14,6 +14,8 @@ namespace Day22_OOP
 
         public Candidate(String name, String LastName, Double HRmark, Double TVmark, Double avarage)
         {
+            name = Console.ReadLine();
+            LastName = Console.ReadLine();
             this.name = name;
             this.LastName = LastName;
             this.HRmark = HRmark;

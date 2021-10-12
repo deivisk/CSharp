@@ -8,15 +8,20 @@ namespace Day22_OOP
         {
             Random random = new Random();
 
-            double randomnum = random.Next(0, 11);
-            double randomnumb = random.Next(0, 11);
+            double randomnum = 0;
 
-            Candidate first = new Candidate("Pults ", "Grāmata", 2007, randomnum);
+            for(int i = 0; i < 2; i++)
+            {
+                randomnum = random.Next(0, 11);
+            }
+            
+
+            Candidate first = new Candidate("Pēteris ", "Gulbis", 2007, randomnum);
             first.izvade();
 
             Console.WriteLine();
 
-            Candidate second = new Candidate("Spilvens ", "Krēsls", 2003, randomnumb);
+            Candidate second = new Candidate("Solvita ", "Āboltiņa", 2003, randomnum);
             second.izvade();
         }
     }

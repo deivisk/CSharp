@@ -7,13 +7,7 @@ namespace Day22_OOP
     {
         static void Main(string[] args)
         {
-            Random random = new Random();
             List<Candidate> Liste = new List<Candidate>();
-
-            Double randomnum = random.Next(0, 11);
-            Double randomnumb = random.Next(0, 11);
-
-            double avarage = (randomnum + randomnumb) / 2;
 
             Console.WriteLine("Cik studentus ievadīt?");
             int daudzums = Convert.ToInt32(Console.ReadLine());
@@ -22,22 +16,36 @@ namespace Day22_OOP
 
             String LastName = "";
 
+            Double HRmark = 0;
+
+            Double TVmark = 0;
+
             for(int i = 0; i < daudzums; i++)
             {
                 Console.WriteLine("Studenta vārds");
                 name = Console.ReadLine();
                 Console.WriteLine("Studenta uzvārds");
                 LastName = Console.ReadLine();
+                Console.WriteLine("Ievadi HR doto atzīmi");
+                HRmark = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Ievadi vadītāja doto atzīmi");
+                TVmark = Convert.ToDouble(Console.ReadLine());
 
-            }
+                ave(HRmark, TVmark);
 
-            for(int i = 0; i < daudzums; i++)
-            {
-                Candidate inf = new Candidate(name, LastName, randomnumb, randomnum, avarage);
+                Candidate inf = new Candidate(name, LastName, HRmark, TVmark, ave(HRmark, TVmark));
                 Liste.Add(inf);
-                inf.izvade();
             }
 
+            for(int i = 0; i < Liste.Count; i++)
+            {
+                Liste[i].izvade();
+            }
+        }
+        static Double ave(Double HRmark, Double TVmark)     //BEIDZOT sanāca!1!!!111!
+        {
+            Double average = (HRmark + TVmark) / 2;
+            return average;
         }
     }
 }

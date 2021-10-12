@@ -23,7 +23,7 @@ namespace Day22_OOP
 
         public void izvade()
         {
-            Console.WriteLine("Vārds, uzvārds " + name + LastName);
+            Console.WriteLine("Studenta vārds, uzvārds " + name + LastName);
             Console.WriteLine("Dotā atzīme no HR - " + HRmark);
             Console.WriteLine("Dotā atzīme no tehniskā vadītāja - " + TVmark);
             Console.WriteLine("Vidējā atzīme - " + average);

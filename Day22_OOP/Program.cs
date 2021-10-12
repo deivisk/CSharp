@@ -11,7 +11,7 @@ namespace Day22_OOP
             Double randomnum = random.Next(0, 11);
             Double randomnumb = random.Next(0, 11);
 
-            double avarage = (randomnum + randomnumb)/2
+            double avarage = (randomnum + randomnumb) / 2;
 
             Candidate first = new Candidate("Pēteris ", "Gulbis", randomnumb, randomnum, avarage);
             first.izvade();

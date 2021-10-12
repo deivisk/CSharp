@@ -22,14 +22,14 @@ namespace Day22_OOP
 
             String LastName = "";
 
-            Candidate inf = new Candidate(name, LastName, randomnumb, randomnum, avarage);
-
             for(int i = 0; i < daudzums; i++)
             {
                 Console.WriteLine("Studenta vārds");
-
+                name = Console.ReadLine();
                 Console.WriteLine("Studenta uzvārds");
+                LastName = Console.ReadLine();
 
+                Candidate inf = new Candidate(name, LastName, randomnumb, randomnum, avarage);
                 Liste.Add(inf);
                 inf.izvade();
             }

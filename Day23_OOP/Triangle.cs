@@ -6,21 +6,22 @@ namespace Day23_OOP
 {
     class Triangle
     {
+        private int _FirstSide;
         public int FirstSide
         {
             get
             {
-                return FirstSide;
+                return _FirstSide;
             }
             set
             {
                 if(FirstSide + SecondSide < ThridSide)
                 {
-                    FirstSide = 0;
+                    _FirstSide = 0;
                 }
                 else if(FirstSide + ThridSide < SecondSide)
                 {
-                    FirstSide = 0;
+                    _FirstSide = 0;
                 }
                 else
                 {
@@ -28,7 +29,10 @@ namespace Day23_OOP
                 }
             }
         }
+        private int _SecondSide;
         public int SecondSide { get; set; }
+
+        private int _ThridSide;
         public int ThridSide { get; set; }
 
         public Triangle(int FirstSide, int SecondSide, int ThridSide)

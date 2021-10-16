@@ -28,52 +28,10 @@ namespace Day23_OOP
                 }
             }
         }
-        public int SecondSide
-        {
-            get
-            {
-                return FirstSide;
-            }
-            set
-            {
-                if (FirstSide + SecondSide < ThridSide)
-                {
-                    SecondSide = 0;
-                }
-                else if (SecondSide + ThridSide < FirstSide)
-                {
-                    SecondSide = 0;
-                }
-                else
-                {
-                    SecondSide = value;
-                }
-            }
-        }
-        public int ThridSide
-        {
-            get
-            {
-                return ThridSide;
-            }
-            set
-            {
-                if (FirstSide + ThridSide < SecondSide)
-                {
-                    ThridSide = 0;
-                }
-                else if (SecondSide + ThridSide < FirstSide)
-                {
-                    ThridSide = 0;
-                }
-                else
-                {
-                    ThridSide = value;
-                }
-            }
-        }
+        public int SecondSide { get; set; }
+        public int ThridSide { get; set; }
 
-        public void Tri(int FirstSide, int SecondSide, int ThridSide)
+        public Triangle(int FirstSide, int SecondSide, int ThridSide)
         {
             this.FirstSide = FirstSide;
             this.SecondSide = SecondSide;

@@ -6,7 +6,7 @@ namespace Day24_JSON
 {
     class Program
     {
-        static string filepath = @"C:\Users\deivi\Downloads\";
+        static string filepath = @"C:\Users\deivi\Downloads";
         static void Main(string[] args)
         {
             string fileName = filepath + "piemers.txt";

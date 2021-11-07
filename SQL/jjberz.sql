@@ -22,6 +22,9 @@ DepSales VarChar (20) not null
 
 Drop Table Employees;
 
+Alter Table Departments
+Drop Column DepAccounting;
+
 
 Insert Into Customers (FirstName, LastName, PhoneNum, Email, ClientType)
 Values ('Janis', 'Berzins', 29293982, 'jjberzins@gmail.com', 1),
@@ -61,16 +64,23 @@ WHERE Customers.EmployeeID = Employees.EmployeeID;
 FROM Employees, Departments
 WHERE Employees.DepartmentID = Departments.DepartmentID;
 
-Set Foreign_Key_Checks = 0; -- 1 lai iestatītu atslēgas
+Set Foreign_Key_Checks = 0; -- 1 lai iestatītu atslēgas, 0 lai izslēgtu
+
+INSERT INTO Departments (DepartmentID,DepHR)
+SELECT EmployeeID,EmployeeName     -- nu pizģets
+FROM Employees;
 
 Update Employees
 Set EmployeeID = 1
-Where DepartmentID = 1 or DepartmentID = 2;
+Where DepartmentID = 1 or DepartmentID = 2; 
 
 Update Employees
 Set EmployeeID = 2
-Where DepartmentID = 3 or DepartmentID = 4;
+Where DepartmentID = 3 or DepartmentID = 4 or DepartmentID = 5;
 
+SELECT Employees.EmpolyeeID, Departments.DepartmentID
+FROM Employees										-- what
+INNER JOIN Departments ON Employees.DepartmentID = Employees.EmpolyeeID;
 
 delete from Employees
 Where EmployeeID = 1;
@@ -78,6 +88,8 @@ Where EmployeeID = 1;
 Select * From Customers;
 
 Select * From Employees;
+
+Select * From Departments;
 
 Select Customers
 Where ClientType = 2;

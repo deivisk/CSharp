@@ -61,7 +61,7 @@ WHERE Customers.EmployeeID = Employees.EmployeeID;
 FROM Employees, Departments
 WHERE Employees.DepartmentID = Departments.DepartmentID;
 
-Set Foreign_Key_Checks = 0;
+Set Foreign_Key_Checks = 0; -- 1 lai iestatītu atslēgas
 
 Update Employees
 Set EmployeeID = 1

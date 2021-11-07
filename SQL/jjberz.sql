@@ -17,7 +17,6 @@ EmployeeEmail VarChar(30) not Null
 Create Table Departments (
 	DepartmentID INT Primary Key Auto_Increment,
 DepHR VarChar(20) not null,
-DepAccounting VarChar(20) not null,
 DepSales VarChar (20) not null
 );
 
@@ -58,7 +57,7 @@ ALTER TABLE Customers
 FROM Customers, Employees
 WHERE Customers.EmployeeID = Employees.EmployeeID;
 
- SELECT Customers.FirstName, Customers.LastName, Employees.EmployeeName, Employees.EmployeeLName
+ SELECT Employees.EmployeeName, Employees.EmployeeLName, Departments.DepHR, Departments.DepSales
 FROM Employees, Departments
 WHERE Employees.DepartmentID = Departments.DepartmentID;
 

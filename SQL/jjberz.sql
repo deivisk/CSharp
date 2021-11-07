@@ -61,6 +61,17 @@ WHERE Customers.EmployeeID = Employees.EmployeeID;
 FROM Employees, Departments
 WHERE Employees.DepartmentID = Departments.DepartmentID;
 
+Set Foreign_Key_Checks = 0;
+
+Update Employees
+Set EmployeeID = 1
+Where DepartmentID = 1 or DepartmentID = 2;
+
+Update Employees
+Set EmployeeID = 2
+Where DepartmentID = 3 or DepartmentID = 4;
+
+
 delete from Employees
 Where EmployeeID = 1;
 

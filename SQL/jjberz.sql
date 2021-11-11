@@ -75,7 +75,7 @@ Set EmployeeID = 2
 Where DepartmentID = 3 or DepartmentID = 4 or DepartmentID = 5;
 
 SELECT Employees.EmpolyeeID, Departments.DepartmentID
-FROM Employees										-- what
+FROM Employees										
 INNER JOIN Departments ON Employees.DepartmentID = Employees.EmpolyeeID;
 
 delete from Employees

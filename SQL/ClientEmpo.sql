@@ -49,6 +49,8 @@ Values
     (1,6),
     (2,6);
     
+    Drop Table EmployeesClients;
+    
 Select * From EmployeesClients;
 
 SELECT Employees.EmployeeName, Employees.EmployeeLName, Clients.ClientName, Clients.ClientLName

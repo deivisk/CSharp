@@ -7,7 +7,23 @@ namespace Day30_CsharpBACK
     {
         static void Main(string[] args)
         {
-            List<string> Vertibas = new List<string>();
+            Console.WriteLine("Ievadiet vārdu:");
+            string name = Console.ReadLine();
+            Console.WriteLine("Ievadiet uzvārdu:");
+            string LastName = Console.ReadLine();
+            Console.WriteLine("Ievadiet telefona numuru:");
+            string PHnumb = Console.ReadLine();
+            Console.WriteLine("Ievadiet E-pastu:");
+            string Email = Console.ReadLine();
+
+            Customer Cust = new Customer();
+            Cust.InitCustomer(name,LastName,PHnumb,Email);
+
+            Console.WriteLine("");
+
+            Cust.Print();
+        }
+            /*List<string> Vertibas = new List<string>();
 
             String memory = "";
 
@@ -37,7 +53,6 @@ namespace Day30_CsharpBACK
             {
                 Console.WriteLine(Vertibas[i]);
             }
-
-        }
+            */
     }
 }

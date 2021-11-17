@@ -28,6 +28,7 @@ namespace Day30_CsharpBACK
             }
 
             Console.WriteLine("");
+
             Console.WriteLine("Apgrieztā secībā:");
 
             Vertibas.Reverse();

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaunaSchema", "JaunaSchema.csproj", "{41F103B6-22E3-49E8-81D0-4E9752CE27EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41F103B6-22E3-49E8-81D0-4E9752CE27EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F103B6-22E3-49E8-81D0-4E9752CE27EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F103B6-22E3-49E8-81D0-4E9752CE27EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F103B6-22E3-49E8-81D0-4E9752CE27EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3270A81-94A2-4C32-BCF4-0292677E1BC5}
+	EndGlobalSection
+EndGlobal

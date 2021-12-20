@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using MySql.Data.MySqlClient;
 
 namespace JaunaSchema
 {
@@ -6,7 +8,17 @@ namespace JaunaSchema
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            CL Connection = new CL();
+
+            List<Customer> lst = Post.SelectCustomer(Connection);
+            
+            foreach(Customer a in lst)
+            {
+                Console.WriteLine(a.LastName);
+            }
+
+            Post.InsertAuthor("Juris", "Kļava", Connection);
         }
     }
 }
